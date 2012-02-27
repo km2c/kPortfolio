@@ -577,7 +577,7 @@ h6 span {
 .clearfix { zoom: 1; }
 
 
-/* ==|== media queries ====================================================== 
+/* ==|== media queries ====================================================== */
 
 @media only screen and (max-width: 1380px) {
   #container {
@@ -682,7 +682,7 @@ h6 span {
   #about p {
   max-width:650px;
 }
-*/
+
 
 /*
 @media only screen and (max-width: 480px) {
