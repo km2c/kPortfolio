@@ -13,3 +13,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Mail settings
+/config/initializers/setup_mail.rb
