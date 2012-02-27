@@ -14,4 +14,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.cycle.all.min
+//= require jquery.prettyPhoto.js
 //= require script

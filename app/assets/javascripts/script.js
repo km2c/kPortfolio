@@ -14,6 +14,7 @@
   });
 
   // Work Page
+  $("a[rel^='prettyPhoto']").prettyPhoto();
 
   $(".portfolio img").fadeTo("slow", 1.0);
   $(".portfolio img").hover(function () {
