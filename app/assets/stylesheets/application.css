@@ -9,7 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require prettyPhoto
+ *
 */
 /* HTML5 ✰ Boilerplate
  * ==|== normalize ==========================================================
@@ -578,7 +578,7 @@ h6 span {
 
 /* ==|== media queries ====================================================== */
 
-/*@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1380px) {
 #container {
   padding-right: 0px;
   position: absolute;  
@@ -681,7 +681,7 @@ span.gray {
 max-width:650px;
 }
 
-}*/
+}
 
 
 
