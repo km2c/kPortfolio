@@ -89,7 +89,6 @@ h2 {
 #container {
   width:1424px;
   padding-right: 30px;
-  position: absolute;
   top:0px;  
 }
 
@@ -581,7 +580,6 @@ h6 span {
 
 @media only screen and (max-width: 1380px) {
   #container {
-    min-width:1024px;
     padding-right: 0px;
     position: absolute;  
   }
