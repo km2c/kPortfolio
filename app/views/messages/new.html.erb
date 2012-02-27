@@ -1,0 +1,45 @@
+		<div id="contact" class="page section">
+
+        <h1>Contact me</h1>
+        <section class="info">
+        		Kirk McCutcheon<br />
+            <span class="address">767 Village Park Dr.<br />Powell, OH 43065</span><br />
+            (m)614.989.3924
+        </section>
+        <%= form_for @message do |f| %>
+          <% if @message.errors.any? %>
+            <div class="error_messages">
+              <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+              <ul>
+              <% @message.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <fieldset class="fields">
+            <div class="field">
+              <%= f.label :name %>
+              <%= f.text_field :name %>
+            </div>
+            
+            <div class="field">
+              <%= f.label :email %>
+              <%= f.text_field :email %>
+            </div>
+            <div class="field">
+              <%= f.label :subject %>
+              <%= f.text_field :subject %>
+            </div>
+            
+            <div class="field">
+              <%= f.label :message %>
+              <%= f.text_area :message %>
+            </div>
+          </fieldset>
+          
+          <fieldset class="actions">
+            <%= f.submit "Send" %>
+          </fieldset>
+        <% end %>
+      </div>
