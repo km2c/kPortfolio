@@ -1,59 +1,14 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-
-  <title>Portfolio</title>
-  <meta name="description" content="">
-  <meta name="author" content="Kirk McCutcheon">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- CSS -->
-
+  <title>Sample</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-
-  <script src="js/modernizr-2.0.6.min.js"></script>
 </head>
-
 <body>
 
-  <div id="container">
-    <div id="main-left">
-    	<%= image_tag "logo.png", :id => "logo" =%>
-      <ul id="nav">
-        <li><%= link_to "Home", root_path, :class => 'home' %></li>
-        <li><%= link_to "About", about_path, :class => 'about' %></li>
-        <li><%= link_to "Resume", resume_path, :class => 'resume' %></li>
-        <li><%= link_to "Work", work_path, :class => 'work' %></li>
-        <li><%= link_to "Contact", contact_path, :class => 'contact' %></li>
-      </ul>
+<%= yield %>
 
-      <!-- <ul id="social">
-        <li><a href="http://www.linkedin.com/in/kirkmcc" target="_blank" title="Linkedin"><%= image_tag "linkedin.png" %></a></li>
-        <li><a href="http://forrst.com/people/Kmack" target="_blank" title="forrst"><%= image_tag "forrst.png" %></a></li>
-        <li><a href="https://github.com/km2c" target="_blank" title="github"><%= image_tag "github.png" %></a></li>
-      </ul> -->
-    </div>
-    <div class="clearfix"></div>
-    <div id="main-right" role="main">
-      <% if flash[:notice] %>
-        <div class="notice"><%= flash[:notice] %></div>
-      <% end %>
-      
-    	<%= yield %>
-    </div>
-  </div> <!--! end of #container -->
-
-  
-  <%= javascript_include_tag "application" %>
-
-  
 </body>
 </html>
