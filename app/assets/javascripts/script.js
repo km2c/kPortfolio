@@ -29,19 +29,21 @@
 
   showcase.first().show();
 
-  $('.showcaseNav a').on('click', function (e) {
+  $('.showcaseNav a').on('click', function(e) {
     var url = e.target.href,
       link = $(this).attr('href');
 
-    if (url.match(/localhost/)) {
-      e.preventDefault();
-      showcase.hide();
-
-      $('.showcaseNav li').removeClass('active');
-      $(this).parent().addClass('active');
-      $('#work').find(link).fadeIn();
+    if (url.match(/hostrea.com/)) {
+      return;
 
     }
+
+    e.preventDefault();
+    showcase.hide();
+
+    $('.showcaseNav li').removeClass('active');
+    $(this).parent().addClass('active');
+    $('#work').find(link).fadeIn();
 
   });
 
