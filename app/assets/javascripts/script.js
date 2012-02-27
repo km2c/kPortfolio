@@ -1,4 +1,4 @@
-(function () {
+;(function ($) {
 
   //Navigation
   var pageID = $(document).find('.page').attr('id');
@@ -46,4 +46,4 @@
   });
 
 
-})();
+})(jQuery);
