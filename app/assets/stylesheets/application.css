@@ -89,7 +89,7 @@ h2 {
 #container {
   width:1424px;
   padding-right: 30px;
-  position: relative;
+  position: absolute;
   top:0px;  
 }
 
