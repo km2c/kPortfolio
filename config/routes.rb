@@ -7,6 +7,12 @@ Kportfolio::Application.routes.draw do
 
   get "static_pages/work"
 
+  match "about" => "static_pages#about"
+  match "resume" => "static_pages#resume"
+  #match 'contact' => 'messages#new', :as => 'contact', :via => :get
+  #match 'contact' => 'messages#create', :as => 'contact', :via => :post
+  match "work" => "static_pages#work"
+
   root :to => 'static_pages#index'
 
   # The priority is based upon order of creation:

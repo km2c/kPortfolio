@@ -13,14 +13,21 @@
   <meta name="author" content="Kirk McCutcheon">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- CSS -->
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+
+
   <%= csrf_meta_tags %>
+
+  <script src="/assets/modernizr-2.0.6.min.js"></script>
 </head>
+
 <body>
-    <div id="container">
+
+  <div id="container">
     <div id="main-left">
-      
+      <%= image_tag "logo.png", :id => "logo" =%>
       <ul id="nav">
         <li><%= link_to "Home", root_path, :class => 'home' %></li>
         <li><%= link_to "About", about_path, :class => 'about' %></li>
@@ -29,9 +36,23 @@
         <li><%= link_to "Contact", contact_path, :class => 'contact' %></li>
       </ul>
 
-<%= yield %>
-
+      <ul id="social">
+        <li><a href="http://www.linkedin.com/in/kirkmcc" target="_blank" title="Linkedin"><%= image_tag "linkedin.png" %></a></li>
+        <li><a href="http://forrst.com/people/Kmack" target="_blank" title="forrst"><%= image_tag "forrst.png" %></a></li>
+        <li><a href="https://github.com/km2c" target="_blank" title="github"><%= image_tag "github.png" %></a></li>
+      </ul>
     </div>
+    <div class="clearfix"></div>
+    <div id="main-right" role="main">
+      <% if flash[:notice] %>
+        <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
+      <%= yield %>
+    </div>
+  </div> <!--! end of #container -->
 
+  <%= javascript_include_tag "application" %>
+
+  
 </body>
 </html>
