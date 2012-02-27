@@ -266,11 +266,27 @@ h6 span a:hover {
 }
 
 #about .box {
-  padding:5px 20px 20px;
-  background-color: #ddd;
-  border:1px solid #ccc;
-  color:#444;
-  margin-bottom:20px;
+  padding: 90px 40px 60px 60px;
+  height: 230px;
+  color: #444;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+
+  -webkit-box-shadow: 1px 1px 5px #999;
+  -moz-box-shadow: 1px 1px 5px #999;
+  box-shadow: 1px 1px 5px #999;
+
+  -webkit-border-radius: 150px 100px 150px 20px;
+  -moz-border-radius: 150px 150px 150px 20px;
+  border-radius: 150px 150px 150px 20px;
+  background: #ffffff; /* Old browsers */
+background: -webkit-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
+
+  background: -moz-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
+  background: -o-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
+  background: -ms-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
+  background: linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 #about h4 {
@@ -627,11 +643,6 @@ h6 span {
     display:block;
   } 
 
-  .column-3 {
-    display:block;
-    width:98%;
-    float:none;
-  }
 
   .feature {
     background: url(feature.jpg) -100px 0 no-repeat;
