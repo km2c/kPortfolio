@@ -18,8 +18,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div id="container">
+    <div id="main-left">
+      <%= image_tag "logo.png", :id => "logo" =%>
+      <ul id="nav">
+        <li><%= link_to "Home", root_path, :class => 'home' %></li>
+        <li><%= link_to "About", about_path, :class => 'about' %></li>
+        <li><%= link_to "Resume", resume_path, :class => 'resume' %></li>
+        <li><%= link_to "Work", work_path, :class => 'work' %></li>
+        <li><%= link_to "Contact", contact_path, :class => 'contact' %></li>
+      </ul>
 
 <%= yield %>
+
+    </div>
 
 </body>
 </html>
