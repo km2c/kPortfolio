@@ -1,12 +1,14 @@
 Kportfolio::Application.routes.draw do
 
-  match "about" => "static_pages#about"
-  match "resume" => "static_pages#resume"
+  root :to => 'static_pages#index'
+  
+  match "about"   => "static_pages#about"
+  match "resume"  => "static_pages#resume"
+  match "work"    => "static_pages#work"
   match 'contact' => 'messages#new', :as => 'contact', :via => :get
   match 'contact' => 'messages#create', :as => 'contact', :via => :post
-  match "work" => "static_pages#work"
 
-  root :to => 'static_pages#index'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
