@@ -577,7 +577,7 @@ h6 span {
 
 @media only screen and (max-width: 1380px) {
   #container {
-    min-width:1024px;
+    width:1024px;
     padding-right: 0px;
     position: absolute;  
   }
@@ -681,11 +681,12 @@ h6 span {
 }
 
 
-/*
+
 @media only screen and (max-width: 480px) {
   
   #container {
-    min-width:320px;
+    width: 100% !important;
+    margin:0;
     padding-right: 0;
     position: absolute;
     z-index:1; 
@@ -695,25 +696,32 @@ h6 span {
     overflow:hidden;
     width: 100%;
     background: #eee url(../images/navBg.png) repeat;
-    position:fixed;
+    position:absolute;
+    top:0;
     z-index:100;
     border-right: none;
-    height:100px;
+    height:130px;
 
   }
 
   #main-right {
     min-height:300px;
     width: 100%;
+    padding-top:280px;
     margin-left:0;
-    margin-right:0;
+    margin-right:10;
     background: #fff;
     border-left: none;
-    padding:20px 0 0; 
+    padding:50px 0 0; 
     position:absolute;
     z-index:1;
     margin-top:100px;
-    overflow:auto;
+    overflow:hidden;
+  }
+
+  .section {
+    width:80%;
+    padding: 0 10px;
   }
 
   #logo {
@@ -752,17 +760,22 @@ h6 span {
     padding-top:10px;
   }
 
-  .section {
-    width:90% !important;
-    margin-top:0;
-    display:block;
-    padding-left:10px;
-    min-height:400px;
+  #slideshow, .control, .feature {
+    display: none;
+  }
+
+  .column-4 {
+    width:100%;
+    margin:5% auto;
+  }
+
+  .column-4 img {
+    max-width: 100%;
   }
 
 
 }
-
+/*
 @media only screen and (min-width: 768px) {
   #container {
     min-width:624px;
