@@ -575,6 +575,8 @@ h6 span {
 
 /* ==|== media queries ====================================================== */
 
+/* ====== | iPad landscape ======================== */
+
 @media only screen and (max-width: 1380px) {
   #container {
     width:1024px;
@@ -681,6 +683,159 @@ h6 span {
 }
 
 
+/* ====== | iPad portrait ======================== */
+
+@media only screen and (max-width: 768px) {
+  #container {
+    width:100% !important;
+    padding-right: 0px;
+    position: absolute;  
+  }
+
+   #main-left {
+    height: 150px;
+    width: 100%;
+    background: #eee url(navBg.png) repeat;
+    position:relative;
+    top:0;
+    left:0;
+    border-right: 1px solid #fff;
+  }
+
+  #main-right {
+    margin-left:0;
+    margin-right:0;
+    background: #fff;
+    border-left: 1px solid #ddd;
+    padding-top:20px;
+    min-height:950px
+  }
+
+  #logo {
+    margin:5px 0 0 10px;
+  }
+
+  #nav {
+    padding-left:20px;
+    padding-bottom:10px;
+    margin:15px 0 5px;
+    display:block;
+  }
+
+  #nav li {
+    display:inline;
+    margin:0 5px;
+  }
+
+  #nav li a {
+    font-size: 14px;
+    padding-bottom:10px;
+  }
+
+  #social {
+    position: absolute;
+    top: 10px;
+    left: 600px;
+  }
+
+  #social li {
+    margin: 0 1px;
+  }
+
+  #social img{
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  #slideshow {
+    width: 700px;
+    height:200px;
+  }
+
+  #slideshow img {
+    max-width:100%;
+  }
+
+  .feature {
+    width:700px;
+    background-position:-30px 0;
+  }
+
+  .column-4 {
+    padding:20px;
+    margin:15px 40px;
+    background:#eee;
+    border:1px solid #ccc;
+  }
+
+  .column-4 h6 {
+    font-size:.9em;
+  }
+
+  .column-4 span a {
+    padding:5px 10px;
+    background:#ac1616;
+    color:#fff;
+    text-shadow:#000 0 0 1px;
+    text-decoration:none;
+    display:block;
+  } 
+
+
+  .feature {
+    background: url(feature.jpg) -100px 0 no-repeat;
+    height:122px;
+    margin-bottom:20px;
+  }
+
+  .feature h1 {
+    text-align:center;
+    font-weight:100;
+    font-style:italic;
+    font-size:20px;
+    padding:20px 18px 0;
+  }
+
+  .feature span {
+    color:#ac1616;
+    font-weight:900;
+    font-style:normal;
+    font-size:25px;
+  }
+
+  span.gray {
+    color:#333;
+    font-weight:900;
+    font-size:25px;
+  }
+
+  .showcaseNav li {
+    margin-bottom:15px;
+  }
+
+  .three-col ul {
+    padding-left: 20px;
+  }
+
+  #about p {
+    max-width:650px;
+  }
+
+  .portfolio { 
+    margin-right:10px;
+    padding-left:0;
+  }
+
+
+
+
+
+
+}
+
+/* ====== | iPhone ======================== */
 
 @media only screen and (max-width: 480px) {
   
@@ -729,7 +884,7 @@ h6 span {
   }
 
   #nav {
-    padding-left:5px;
+    padding-left:15px;
     padding-bottom:10px;
     margin:15px 0 5px;
     display:block;
@@ -773,47 +928,24 @@ h6 span {
     max-width: 100%;
   }
 
+  #contact {
+    padding-bottom: 20px;
+  }
+
+  #contact input {
+    height:20px;
+    width:100%;
+  }
+
+  #contact textarea {
+    height:200px;
+    width:100%;
+  }
+
+  .portfolio { 
+    margin-right:10px;
+    padding-left:30px;
+  }
 
 }
-/*
-@media only screen and (min-width: 768px) {
-  #container {
-    min-width:624px;
-    padding-right: 30px;
-    position: fixed;  
-  }
-}
 
-@media only screen and (max-width: 1024px) {
-  #container {
-    min-width:1024px;
-    padding-right: 30px;
-    position: absolute;  
-  }
-
-@media only screen and (min-width: 1025px) {
-  #container {
-    min-width:1025px;
-    padding-right: 30px;
-    position: absolute;  
-  }
-}*/
-
-
-
-/* ==|== print styles ======================================================= 
- 
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; }
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
-}*/
