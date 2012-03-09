@@ -163,6 +163,7 @@ DEPENDENCIES
   active_attr
   activeadmin
   coffee-rails (~> 3.2.1)
+  devise
   heroku
   jquery-rails
   pg
