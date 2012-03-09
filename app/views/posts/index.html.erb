@@ -1,0 +1,8 @@
+<% @posts.each do |post| %>
+	<article class="post">
+		<h1><%= post.title %></h1>
+		<img src="<%= image_path post.image %>" alt="<%= post.title %>"> 
+		<%= raw truncate post.content, length: 300 %>
+		<p><%= link_to "read more...", post_path(post) %></p>
+	</article>
+<% end %>

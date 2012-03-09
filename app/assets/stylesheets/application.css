@@ -83,10 +83,11 @@ h2 {
 }
 
 #container {
-  width:1424px;
+  max-width:1424px;
   padding-right: 30px;
   position: absolute;
   top:0px;  
+  overflow-x:hidden;
 }
 
 #main-left {

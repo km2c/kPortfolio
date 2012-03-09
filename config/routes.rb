@@ -1,10 +1,18 @@
 Kportfolio::Application.routes.draw do
 
+ 
+
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root :to => 'static_pages#index'
   
   match "about"   => "static_pages#about"
   match "resume"  => "static_pages#resume"
   match "work"    => "static_pages#work"
+  match "blog"    => "posts#index"
+  match "blog/:id" => "posts#post", :as => "post"
   match 'contact' => 'messages#new', :as => 'contact', :via => :get
   match 'contact' => 'messages#create', :as => 'contact', :via => :post
 
