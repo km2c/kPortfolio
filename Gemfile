@@ -7,6 +7,7 @@ gem 'rails', '3.2.1'
 gem 'heroku'
 gem 'active_attr'
 gem 'activeadmin'
+gem 'devise'
 
 group :test, :development do
  gem 'sqlite3'
