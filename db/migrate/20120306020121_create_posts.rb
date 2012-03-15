@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.string :image
       t.integer :category_id
-      t.text :body
+      t.text :content
       t.boolean :published
 
       t.timestamps

@@ -1,6 +1,6 @@
-class DeviseCreateUsers < ActiveRecord::Migration
+class DeviseCreateAdminUsers < ActiveRecord::Migration
   def change
-    create_table(:users) do |t|
+    create_table(:admin_users) do |t|
       ## Database authenticatable
       t.string :email,              :null => false, :default => ""
       t.string :encrypted_password, :null => false, :default => ""
@@ -40,10 +40,13 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :users, :email,                :unique => true
-    add_index :users, :reset_password_token, :unique => true
-    # add_index :users, :confirmation_token,   :unique => true
-    # add_index :users, :unlock_token,         :unique => true
-    # add_index :users, :authentication_token, :unique => true
+    # Create a default user
+    AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
+
+    add_index :admin_users, :email,                :unique => true
+    add_index :admin_users, :reset_password_token, :unique => true
+    # add_index :admin_users, :confirmation_token,   :unique => true
+    # add_index :admin_users, :unlock_token,         :unique => true
+    # add_index :admin_users, :authentication_token, :unique => true
   end
 end

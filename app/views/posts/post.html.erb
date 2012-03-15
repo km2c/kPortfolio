@@ -1,0 +1,5 @@
+	<article class="fullPost">
+		<h1><%= @post.title %></h1>
+		<img src="<%= image_path @post.image %>" alt="<%= @post.title %>"> 
+		<%= raw @post.content %>
+	</article>

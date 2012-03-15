@@ -35,11 +35,6 @@
         <li><%= link_to "Work", work_path, :class => 'work' %></li>
         <li><%= link_to "Blog", blog_path, :class => 'blog' %></li>
         <li><%= link_to "Contact", contact_path, :class => 'contact' %></li>
-        <% if user_signed_in? %>
-          <li><%= link_to 'Posts', posts_path %></li>
-          <li><%= link_to 'Categories', categories_path %></li>
-          <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-        <% end %>
       </ul>
 
       <ul id="social">
@@ -50,8 +45,9 @@
     </div>
     <div class="clearfix"></div>
     <div id="main-right" role="main">
-      <div id="user_nav">
-      </div>
+      <% if flash[:notice] %>
+        <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
       <%= yield %>
     </div>
   </div> <!--! end of #container -->
