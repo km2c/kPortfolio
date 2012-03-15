@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+	<% if post.published? %>
+	<div class="post">
+		<h1><%= post.title %></h1>
+		<img src="<%= image_path post.image %>" alt="<%= post.title %>">
+		<%= raw truncate post.body, length: 300 %>
+	</div>
+	<% end %>
+<% end %>

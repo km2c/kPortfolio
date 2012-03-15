@@ -6,8 +6,7 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'heroku'
 gem 'active_attr'
-gem 'activeadmin'
-gem 'devise', '1.1.2'
+gem 'devise'
 
 group :test, :development do
  gem 'sqlite3'

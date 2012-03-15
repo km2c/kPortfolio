@@ -1,8 +1,32 @@
+<h1>Listing posts</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Image</th>
+    <th>Category</th>
+    <th>Body</th>
+    <th>Published</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
 <% @posts.each do |post| %>
-	<article class="post">
-		<h1><%= post.title %></h1>
-		<img src="<%= image_path post.image %>" alt="<%= post.title %>"> 
-		<%= raw truncate post.content, length: 300 %>
-		<p><%= link_to "read more...", post_path(post) %></p>
-	</article>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.image %></td>
+    <td><%= post.category_id %></td>
+    <td><%= truncate post.body, length: 100 %></td>
+    <td><%= post.published %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
 <% end %>
+</table>
+<%= link_to 'New Post', new_post_path %>
+
+<br />
+
+

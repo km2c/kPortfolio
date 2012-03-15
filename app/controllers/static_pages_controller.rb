@@ -10,4 +10,8 @@ class StaticPagesController < ApplicationController
 
   def work
   end
+
+  def blog
+  	@posts = Post.all
+  end
 end

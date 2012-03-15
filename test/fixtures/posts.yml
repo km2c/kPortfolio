@@ -3,11 +3,13 @@
 one:
   title: MyString
   image: MyString
-  content: MyText
+  category_id: 1
+  body: MyText
   published: false
 
 two:
   title: MyString
   image: MyString
-  content: MyText
+  category_id: 1
+  body: MyText
   published: false
