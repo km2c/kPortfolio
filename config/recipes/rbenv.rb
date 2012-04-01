@@ -1,4 +1,4 @@
-set_default :ruby_version, "1.9.3-p125"
+set_default :ruby_version, "1.9.2-p290"
 set_default :rbenv_bootstrap, "bootstrap-ubuntu-10-04"
 
 namespace :rbenv do
