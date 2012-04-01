@@ -1,9 +1,9 @@
-root = "/home/deployer/apps/kportfolio2/current"
+root = "/home/deployer/apps/kportfolio/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
 stdout_path "#{root}/log/unicorn.log"
 
-listen "/tmp/unicorn.kportfolio2.sock"
+listen "/tmp/unicorn.kportfolio.sock"
 worker_processes 2
 timeout 30

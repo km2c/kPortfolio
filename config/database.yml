@@ -24,4 +24,4 @@ production:
   database: blog_production
   pool: 5
   username: blog
-  password: Mu5t4ng1
+  password: 
