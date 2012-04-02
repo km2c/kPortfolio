@@ -2,7 +2,9 @@
 	<% if post.published? %>
 		<article class="post">
 			<h1><%= post.title %></h1>
-			<img src="<%= image_path post.image %>" alt="<%= post.title %>"> 
+			<% if post.image? %>
+				<img src="<%= image_path post.image %>" alt="<%= post.title %>"> 
+			<% end %>
 			<%= raw truncate post.content, length: 350 %>
 			<p><%= link_to "read more...", post_path(post) %></p>
 		</article>
