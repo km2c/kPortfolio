@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require prettyPhoto
+ *= require posts
 */
 /* HTML5 ✰ Boilerplate
  * ==|== normalize ==========================================================
@@ -75,7 +76,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
 h1,h2,h3,h4,h5,h6 {
-  color:#333 !important;
+  color:#333;
 }
 
 h2 {
@@ -260,36 +261,24 @@ h6 span a:hover {
   width:260px;
   float: left;
   margin:10px;
+  box-shadow:0 0 0 1px #b10202;
 }
 
 #about .box {
-  padding: 90px 40px 60px 60px;
-  height: 230px;
+  padding: 20px;
   color: #444;
-  margin-bottom: 20px;
-  border: 1px solid #eee;
-
-  -webkit-box-shadow: 1px 1px 5px #999;
-  -moz-box-shadow: 1px 1px 5px #999;
-  box-shadow: 1px 1px 5px #999;
-
-  -webkit-border-radius: 150px 100px 150px 20px;
-  -moz-border-radius: 150px 150px 150px 20px;
-  border-radius: 150px 150px 150px 20px;
-  background: #ffffff; /* Old browsers */
-background: -webkit-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
-
-  background: -moz-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
-  background: -o-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
-  background: -ms-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
-  background: linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border: 1px solid #ff2222;
+  background:#b31f1a;
 }
 
 #about h4 {
-  color: #999;
+  color: #fff;
   font-size: 1.4em;
   margin: 0;
+}
+
+#about .box li {
+  color:#eee;
 }
 
 
@@ -874,8 +863,6 @@ h6 span {
     background: #fff;
     border-left: none;
     padding:50px 0 0; 
-    position:absolute;
-    z-index:1;
     margin-top:100px;
     overflow:hidden;
   }
@@ -904,6 +891,10 @@ h6 span {
   #nav li a {
     font-size: 14px;
     padding-bottom:10px;
+  }
+
+  #nav li:first-child {
+    display:none;
   }
 
   #social {
@@ -951,6 +942,10 @@ h6 span {
   .portfolio { 
     margin-right:10px;
     padding-left:30px;
+  }
+
+  .post {
+    padding:0 10px;
   }
 
 }
