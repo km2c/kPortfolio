@@ -261,24 +261,24 @@ h6 span a:hover {
   width:260px;
   float: left;
   margin:10px;
-  box-shadow:0 0 0 1px #b10202;
+  box-shadow:0 0 0 1px #ccc;
 }
 
 #about .box {
   padding: 20px;
   color: #444;
-  border: 1px solid #ff2222;
-  background:#b31f1a;
+  border: 1px solid #fff;
+  background: #eee url(navBg.png) repeat;
 }
 
 #about h4 {
-  color: #fff;
+  color: #ac1616;
   font-size: 1.4em;
   margin: 0;
 }
 
 #about .box li {
-  color:#eee;
+  color:#333;
 }
 
 
@@ -925,6 +925,15 @@ h6 span {
     max-width: 100%;
   }
 
+   .three-col {
+    height: auto;
+   }
+
+  .three-col ul {
+    float: none;
+    display: block;
+  }
+
   #contact {
     padding-bottom: 20px;
   }
@@ -946,6 +955,10 @@ h6 span {
 
   .post {
     padding:0 10px;
+  }
+
+  #resume {
+    width:90%;
   }
 
 }
