@@ -29,6 +29,7 @@ namespace :postgresql do
   desc "Symlink the database.yml file into latest release"
   task :symlink, roles: :app do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/config/setup_mail.rb #{release_path}/config/initializers/setup_mail.rb"
   end
   after "deploy:finalize_update", "postgresql:symlink"
 end
