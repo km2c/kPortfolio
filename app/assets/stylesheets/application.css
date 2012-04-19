@@ -480,6 +480,21 @@ h6 span {
   border:1px solid #ccc;
   background-color: #444444;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#999999)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #eeeeee, #cccccc); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #eeeeee, #cccccc); /* IE10 */
+  background-image:      -o-linear-gradient(top, #eeeeee, #cccccc); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, #eeeeee, #cccccc);
+  
+  -webkit-box-shadow: 1px 2px 4px #333; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow: 1px 2px 4px #333; /* FF3.5 - 3.6 */
+        box-shadow: 1px 2px 4px #333; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}
+
+.more_button:hover {
+
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#999999)); /* Saf4+, Chrome */
   background-image: -webkit-linear-gradient(top, #cccccc, #eeeeee); /* Chrome 10+, Saf5.1+, iOS 5+ */
   background-image:    -moz-linear-gradient(top, #cccccc, #eeeeee); /* FF3.6 */
   background-image:     -ms-linear-gradient(top, #cccccc, #eeeeee); /* IE10 */
@@ -489,17 +504,6 @@ h6 span {
   -webkit-box-shadow: 1px 2px 4px #333; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
    -moz-box-shadow: 1px 2px 4px #333; /* FF3.5 - 3.6 */
         box-shadow: 1px 2px 4px #333; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
-}
-
-.more_button:hover {
-  background-color: #444444;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#999999)); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc); /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image:    -moz-linear-gradient(top, #eeeeee, #cccccc); /* FF3.6 */
-  background-image:     -ms-linear-gradient(top, #eeeeee, #cccccc); /* IE10 */
-  background-image:      -o-linear-gradient(top, #eeeeee, #cccccc); /* Opera 11.10+ */
-  background-image:         linear-gradient(top, #eeeeee, #cccccc);
-  
 }
 
 /*= Contact Page ========================*/
