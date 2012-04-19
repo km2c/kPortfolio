@@ -3,11 +3,12 @@
 		<% if post.published? %>
 			<article class="post">
 				<h1><%= post.title %></h1>
+				<h5><span><%= post.created_at.strftime("Published on %m/%d/%Y") %></span> Category: <%= post.category.title %></h5>
 				<% if post.image? %>
 					<img src="<%= image_path post.image %>" alt="<%= post.title %>"> 
 				<% end %>
 				<%= raw truncate post.content, length: 350 %>
-				<p><%= link_to "read more...", post_path(post) %></p>
+				<p><%= link_to "read more...", post_path(post), :class => "read-more" %></p>
 			</article>
 		<% end %>
 	<% end %>

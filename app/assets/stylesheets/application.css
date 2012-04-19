@@ -28,9 +28,9 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #666; }
+a:visited { color: #666; }
+a:hover { color: #ac1616; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
@@ -544,10 +544,35 @@ h6 span {
   box-shadow:inset 1px 1px 5px #333;
 }
 
+/*= Blog Page ========================*/
 
+.post {
+  padding: 20px;
+  background:#efefef;
+  border:1px solid #fff;
+  box-shadow: 0 0 0 1px #ccc;
+}
 
+.post h5, .post h1  {
+  padding:0;
+  margin:0;
+}
 
+.post h5 {
+  font-weight:normal;
+  color:#666;
+  margin-bottom:10px;
+}
 
+.post h5 span {
+  font-style:italic;
+  margin-right:20px;
+}
+
+.read-more, .read-more:visited {
+  text-align:right;
+  display: block;
+}
 
 
 
@@ -672,8 +697,14 @@ h6 span {
   }
 
   #about p {
-  max-width:650px;
-}
+    max-width:650px;
+  }
+  
+  .showcaseNav {
+    height: 60px;
+    width: 500px;
+  }
+
 }
 
 
@@ -827,6 +858,11 @@ h6 span {
     margin-right:20px;
 
   }
+  
+  .showcaseNav {
+    height: 60px;
+    width: 500px;
+  }
 
 
 
@@ -963,6 +999,19 @@ h6 span {
 
   #resume {
     width:90%;
+  }
+  
+  .showcaseNav {
+    height: 60px;
+    width: 250px;
+  }
+
+  .more_button {
+    width:200px;
+  }
+
+  .post {
+    padding-top:20px;
   }
 
 }
