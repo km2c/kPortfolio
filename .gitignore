@@ -18,3 +18,4 @@
 /config/initializers/setup_mail.rb
 /config/deploy.rb
 /config/database.yml
+/config/newrelic.yml
