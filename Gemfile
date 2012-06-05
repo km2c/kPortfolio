@@ -8,7 +8,7 @@ gem 'heroku'
 gem 'active_attr'
 gem 'devise', '2.0.2'
 gem 'activeadmin'
-gem 'newrelic_rpm'
+#gem 'newrelic_rpm'
 
 group :test, :development do
  gem 'sqlite3'
